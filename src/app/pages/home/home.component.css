@@ -1,0 +1,86 @@
+.home-container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  color: #2c2c2c;
+  transition: all 0.2s;
+}
+
+.customer-container,
+.order-container,
+.restaurant-container {
+  width: 100%;
+  max-width: 30rem;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03),
+    0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03),
+    0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05),
+    0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
+  transition: all 0.2s;
+}
+
+.customer-container p,
+.order-container p,
+.restaurant-container p {
+  margin: 0.5rem auto;
+}
+
+.customer-container p span,
+.order-container p span,
+.restaurant-container p span {
+  font-weight: 500;
+}
+
+.heading {
+  margin: 0.5rem auto;
+}
+
+.order-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order {
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+}
+.order p {
+  margin: 0rem;
+}
+
+.order-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.update-btn {
+  cursor: pointer;
+  display: block;
+  border: 1px solid #06f;
+  background-color: #fff;
+  color: #06f;
+  padding: 0.6rem;
+  outline: none;
+  font-size: 14px;
+  margin: 0rem 0rem 0rem auto;
+}
+
+@media screen and (max-width: 38rem) {
+  .customer-container,
+  .order-container,
+  .restaurant-container {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .order {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,97 @@
+.login-container {
+  margin: 8.5rem auto;
+  padding: 2rem;
+  max-width: 28rem;
+  background-color: #fff;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03),
+    0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03),
+    0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05),
+    0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
+  color: #2c2c2c;
+  transition: all 0.2s;
+}
+
+.login-heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0rem auto;
+}
+
+.login-form input {
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #fff;
+  color: #2c2c2c;
+  outline: none;
+  display: block;
+  font-size: 14px;
+  margin: 1.5rem auto;
+  transition: all 0.2s;
+}
+
+.login-form input:focus,
+.login-form input:active {
+  border-color: #888;
+}
+
+.login-form input::placeholder {
+  color: #2c2c2c;
+}
+
+.forget-password {
+  text-align: center;
+  margin: 0rem auto;
+}
+
+.forget-password a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.submit-button {
+  cursor: pointer;
+  color: #fff;
+  display: block;
+  background-color: #06f;
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  margin: 1.5rem auto;
+  transition: all 0.2s;
+}
+.submit-button:hover,
+.submit-button:focus,
+.submit-button:active {
+  background-color: #005ce6;
+}
+
+.submit-button:disabled {
+  cursor: not-allowed;
+}
+
+.submit-button:disabled:hover,
+.submit-button:disabled:focus,
+.submit-button:disabled:active {
+  background-color: #005ce6;
+  cursor: not-allowed;
+}
+
+.invalid-credential {
+  margin: 0rem auto;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #db133a;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 30rem) {
+  .login-container {
+    max-width: 95%;
+    padding: 1.5rem;
+  }
+}

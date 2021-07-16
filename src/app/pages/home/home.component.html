@@ -1,0 +1,28 @@
+<div class="home-container">
+    <div class="customer-container">
+        <h3 class="heading">Customer Information</h3>
+        <p><span>Name</span> : {{name}}</p>
+        <p><span>Phone Number</span> : {{phoneNo}}</p>
+        <p><span>Email</span> : {{emailId}}</p>
+        <p><span>Address</span> : {{address}}</p>
+    </div>
+    <div class="order-container" *ngFor="let o of order">
+        <h3 class="heading order-date"><span>Order Date</span> <span>{{orderDate | date:'MM/dd/yyyy'}}</span></h3>
+        <h3>Order Details</h3>
+        <div class="order">
+            <p><span>{{o.orderName}}</span></p>
+            <div class="order-detail">
+                <span>X {{o.quantity}}</span>
+                <span>{{o.value | currency:"&#8377;"}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-container">
+        <h3 class="heading">{{outletName}}</h3>
+        <p><span>Phone No.</span> : {{mobile}}</p>
+        <p><span>Alternate No.</span> : {{mobile2}}{{mobile3? ", "+mobile3:""}}</p>
+        <p><span>Email</span> : {{email}}</p>
+        <p><span>Address</span> : {{addressLine}}</p>
+        <button class="update-btn">Update Contact</button>
+    </div>
+</div>

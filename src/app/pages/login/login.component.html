@@ -1,0 +1,10 @@
+<div class="login-container">
+    <h3 class="login-heading">Sign in</h3>
+    <form class="login-form" (ngSubmit)="loginSubmitHandler(form)" #form="ngForm">
+        <input type="email" placeholder="E-mail" name="email" required ngModel />
+        <input type="password" placeholder="Password" name="password" ngModel required />
+        <p class="invalid-credential" *ngIf="invalidCredential">* Incorrect Credentials.</p>
+        <button type="submit" class="submit-button" [disabled]="!form.valid">Submit</button>
+    </form>
+    <p class="forget-password"><a href="">Forget Password?</a></p>
+</div>
